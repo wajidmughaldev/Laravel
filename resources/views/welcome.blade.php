@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>welcome {{$name}}</h1>
+    <h1>welcome page</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit consequuntur iure recusandae doloremque suscipit ad, accusamus architecto nisi corporis impedit excepturi officia, consequatur ipsam maiores totam deserunt laborum quidem!</p>
 </body>
 </html>

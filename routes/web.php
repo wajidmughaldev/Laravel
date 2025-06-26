@@ -12,10 +12,3 @@ Route::get('/about',function(){
 Route::get('/contact',function(){
     return view('pages.contact');
 });
-
-// only returning view 
-
-Route::view('/welcome','welcome');
-
-// 3rd parameter is optional to pass data to route
-// Route::view('/welcome','welcome',['name'=>'wajid']);
