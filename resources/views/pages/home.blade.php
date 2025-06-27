@@ -7,9 +7,9 @@
 </head>
 <body>
     
-    <a href="{{route('/')}}">Home</a>
+     <a href="{{route('home')}}">Home</a>
     <a href="{{route('about')}}">About</a>
-    <a href="{{route('contact')}}">Contact</a>
+    <a href="{{route('contact')}}">Contact</a> 
     <h1>home page</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit consequuntur iure recusandae doloremque suscipit ad, accusamus architecto nisi corporis impedit excepturi officia, consequatur ipsam maiores totam deserunt laborum quidem!</p>
 </body>
