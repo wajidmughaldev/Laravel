@@ -28,4 +28,6 @@ Route::get('/welcome',function(){
 });
 
 Route::redirect('/welcome','/home');
-
+Route::fallback(function(){
+    return '<h1>Page not found</h1>';
+});
