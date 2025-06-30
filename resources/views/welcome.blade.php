@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simple Homepage Layout</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+@extends('layout/mainLayout')
+{{-- @section('content')
+<h2>Welcome to the Homepage</h2>
+<p>This is the main content area where your page content will appear.</p>
+@endsection --}}
 
- @include('pages/components/header')
- @include('pages/components/content')
- @include('pages/components/footer')
-
-</body>
-</html>
+@section('title')
+Home
+@endsection
