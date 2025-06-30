@@ -12,3 +12,7 @@ Route::get('/about',function(){
 Route::get('/contact',function(){
     return view('pages.contact');
 })->name('contact');
+
+Route::get('/jsinlaravel',function(){
+    return view('pages.jsinlaravel');
+})->name('jsinlaravel');

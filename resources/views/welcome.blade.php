@@ -7,3 +7,9 @@
 @section('title')
 Home
 @endsection
+
+
+
+@push('scripts')
+    <script src="./home.js"></script>
+@endPush

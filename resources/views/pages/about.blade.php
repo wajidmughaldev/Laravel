@@ -6,3 +6,4 @@
 @section('title')
 about
 @endsection
+
