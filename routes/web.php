@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
 Route::get('/', function (Request $request) {
-    return $request;
+    return view('welcome');
 });
 Route::get('/about',function(){
     return view('pages.about');
