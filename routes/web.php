@@ -2,17 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function (Request $request) {
-    return view('welcome');
-})->name('home');
-Route::get('/about',function(){
-    return view('pages.about');
-})->name('about');
-Route::get('/contact',function(){
-    return view('pages.contact');
-})->name('contact');
+Route::controller(PageController::class)->group(function(){
+    
+Route::get('/','showHome')->name('home');
+Route::get('/about','showAbout')->name('about');
+Route::get('/contact','showContact')->name('contact');
+Route::get('/jsinlaravel','showjs')->name('jsinlaravel');
 
-Route::get('/jsinlaravel',function(){
-    return view('pages.jsinlaravel');
-})->name('jsinlaravel');
+});
