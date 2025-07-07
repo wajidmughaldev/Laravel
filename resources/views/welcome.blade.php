@@ -8,5 +8,12 @@
 <body>
     <h1>welcome page</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit consequuntur iure recusandae doloremque suscipit ad, accusamus architecto nisi corporis impedit excepturi officia, consequatur ipsam maiores totam deserunt laborum quidem!</p>
+
+    <form action="/" method="POST">
+        @csrf
+        <input type="text" name="name" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
