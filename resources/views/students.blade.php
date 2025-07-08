@@ -37,11 +37,17 @@
         h1 {
             color: #333;
         }
+        .del {
+            color: red;
+            text-decoration: none;
+
+        }
     </style>
 </head>
 <body>
     <h1>Student List</h1>
-    
+    <span>Total Records: {{$totalRecords}}</span>
+    <button onclick="window.location='{{route('delete.all.students')}}'" class="del">Delete All</button>
 
     <table>
         <thead>
@@ -56,6 +62,7 @@
                 <th>State</th>
                 <th>Zip Code</th>
                 <th>Created At</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -71,6 +78,9 @@
                     <td>{{ $student->state }}</td>
                     <td>{{ $student->zip_code }}</td>
                     <td>{{ date('Y-m-d', strtotime($student->created_at)) }}</td>
+                    <td>
+                        <a href="{{route('delete.single.student',['id'=>$student->id])}}" class="del">Delete</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
