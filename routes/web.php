@@ -2,12 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use App\Http\Controllers\PageController;
-use App\Http\Controllers\TestController;
+use App\Http\Controllers\UserController;
 
-Route::controller(PageController::class)->group(function(){
-    Route::get('/','showHome')->name('home');
-    Route::get('/about','showAbout')->name('about');
-    Route::get('/contact','showContact')->name('contact');
+Route::get('/', function () {
+    return view('welcome');
 });
-Route::get('/test', TestController::class)->name('test');
+Route::get('/students', [UserController::class, 'showStudents'])->name('students.show');
+Route::get('/student/{id}', [UserController::class, 'showSingleStudent'])->name('student.single.show');
+Route::get('/student/{city}', [UserController::class, 'showSingleStudentByCity'])->name('show.single.student.bu.city');
